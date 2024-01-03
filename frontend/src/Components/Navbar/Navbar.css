@@ -1,0 +1,99 @@
+.navbar {
+  font-size: 20px;
+  font-weight: bold;
+  background-color: rgb(238, 241, 243);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  height: 50px;
+}
+
+.navbar__logo {
+  margin-left: 100px;
+  display: flex;
+  align-items: baseline;
+  cursor: pointer;
+}
+
+.navbar__logo h3 {
+  font-size: 12px;
+  font-weight: bolder;
+  color: rgb(5, 17, 90);
+  text-decoration: none;
+}
+
+.navbar__logo img {
+  width: 40px;
+}
+
+.nav_menu {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  gap: 60px;
+}
+
+.nav_menu li {
+  font-size: 16px;
+  list-style: none;
+  margin-left: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  border-bottom: 4px solid transparent;
+  width: 80%;
+  border-radius: 4 px;
+}
+
+.nav_menu li:hover {
+  width: 80%;
+  transition: width 0.3s;
+  color: rgb(5, 17, 90);
+}
+
+.navbar__cart {
+  margin-right: 150px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar__cart button {
+  background-color: transparent;
+  font-size: 14px;
+  border: 1px solid rgb(5, 17, 90);
+  border-radius: 20px;
+  cursor: pointer;
+  padding: 8px 18px;
+  font-weight: bold;
+  color: rgb(5, 17, 90);
+}
+
+.navbar__cart button:active {
+  background-color: rgb(218, 218, 218);
+}
+
+.navbar__cart img {
+  width: 30px;
+  cursor: pointer;
+}
+
+.navbar__cart span {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -35px;
+  margin-left: -30px;
+  border-radius: 50%;
+  font-size: 10px;
+  background-color: #ff4141;
+  color: white;
+  cursor: pointer;
+}
