@@ -11,11 +11,6 @@
   margin: 6px 0;
 }
 
-.tem-prices {
-  display: flex;
-  gap: 20px;
-}
-
 .item-price-new {
   color: #3200c8;
   font-size: 18px;

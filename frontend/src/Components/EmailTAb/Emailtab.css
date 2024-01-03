@@ -1,0 +1,63 @@
+.emailTab {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 10px 1rem;
+  padding-bottom: 2rem;
+  box-sizing: border-box;
+  background-color: #b6c3de;
+}
+
+.emailTab::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+.emailTab__container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.emailTab__container__left {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.emailTab__container__left h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.emailTab__container__left p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.emailTab__container__right {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.emailTab__container__right input {
+  width: 600px;
+  height: 5rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
