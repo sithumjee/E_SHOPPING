@@ -1,0 +1,27 @@
+/* Footer.css */
+
+.footer {
+  background-color: #b6c3de;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+}
+
+.footer-section {
+  flex: 1;
+}
+
+.footer-section h4 {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  color: #777;
+}

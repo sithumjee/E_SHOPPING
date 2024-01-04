@@ -4,6 +4,7 @@ import Popular from "../Components/Popular/Popular";
 import Offers from "../Components/Offers/Offers";
 import ComponentNew from "../Components/ComponentNew/ComponentNew";
 import Emailtab from "../Components/EmailTAb/Emailtab";
+import Footer from "../Components/Footer/Footer";
 
 export default function Shop() {
   return (
@@ -13,6 +14,7 @@ export default function Shop() {
       <Offers />
       <ComponentNew />
       <Emailtab />
+      <Footer />
     </div>
   );
 }
