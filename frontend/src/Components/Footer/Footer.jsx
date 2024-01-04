@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "./Footer.css";
+import whatsapp from "../Assets/whatsapp_icon.png";
+import facebook from "../Assets/facebook.svg";
 
 const Footer = () => {
   const [showAboutModal, setShowAboutModal] = useState(false);
@@ -95,19 +97,23 @@ const Footer = () => {
             </p>
             <ul>
               <li>
-                WhatsApp:{" "}
-                <a href="https://wa.me/yourphonenumber">
-                  Chat with us on WhatsApp
+                <a href="https://wa.me/94711663875">
+                  <img src={whatsapp} alt="" />
+                  <h6>: Chat with us on WhatsApp</h6>
                 </a>
               </li>
               <li>
-                Facebook:{" "}
-                <a href="https://www.facebook.com/yourpage">
-                  <img src="facebook.png" alt="Facebook" />
+                <a href="https://www.facebook.com/SithumJeevantha">
+                  <img src={facebook} alt="Facebook" />
+                  <h6>: Join on Facebook</h6>
                 </a>
               </li>
-              <li>Phone: +94711663875</li>
-              <li>Email: eshopping@gmail.com</li>
+              <li>
+                <h5>Phone: +94711663875</h5>
+              </li>
+              <li>
+                <h5>Email: eshopping@gmail.com</h5>
+              </li>
             </ul>
           </div>
         </div>

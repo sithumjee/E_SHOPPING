@@ -76,6 +76,17 @@
   margin-bottom: 20px;
 }
 
+.modal-content h3 {
+  color: rgb(13, 8, 102);
+  font-weight: bolder;
+  border-radius: 5px;
+  padding: 5px;
+  width: 70%;
+  margin: 0 auto; /* Center-align the h2 element */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
 .modal-content p {
   padding-left: 20px;
   margin-bottom: 10px;
@@ -92,9 +103,27 @@
 
 .modal-content ul li {
   margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .modal-content ul li img {
   max-width: 30px;
   max-height: 30px;
+}
+
+.modal-content ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content ul li a h6,
+h5 {
+  margin-left: 10px;
+  font-size: 14px;
+  color: #180449;
 }
