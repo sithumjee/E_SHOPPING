@@ -3,6 +3,7 @@ import Footer from "../Components/Footer/Footer";
 import { ShopContext } from "../Context/ShopContent";
 import { useParams } from "react-router-dom";
 import GetProductId from "../Components/GetProductId/GetProductId";
+import ProductDisplay from "../Components/ProductDisplay/ProductDisplay";
 
 export default function Product() {
   const { all_product } = useContext(ShopContext);
@@ -12,6 +13,7 @@ export default function Product() {
   return (
     <div>
       <GetProductId product={product} />
+      <ProductDisplay product={product} />
       <Footer />
     </div>
   );
