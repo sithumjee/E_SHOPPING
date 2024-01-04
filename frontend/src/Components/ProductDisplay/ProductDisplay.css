@@ -52,16 +52,19 @@
 
 .display-right-price {
   margin-top: 10px;
+  display: flex;
 }
 
 .rightPriceOld {
   text-decoration: line-through;
-  color: #999999;
+  color: #786a6a;
 }
 
 .rightPriceNew {
-  color: #091097;
+  color: #d10808;
   font-weight: bold;
+  margin-left: 20px;
+  font-size: 18px;
 }
 
 .display-right-size {
@@ -75,7 +78,7 @@
 }
 
 .sizeList-item {
-  margin-right: 10px;
+  margin-right: 15px;
   padding: 5px 10px;
   border: 1px solid #e0e0e0;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
