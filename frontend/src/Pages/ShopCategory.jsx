@@ -9,8 +9,8 @@ export default function ShopCategory(props) {
   const { all_product } = useContext(ShopContext);
   return (
     <div className="mainCategory">
-      <div className="shop-category">
-        <img src={props.banner} alt="" />
+      <div>
+        <img className="banner-image" src={props.banner} alt="" />
       </div>
 
       <div className="shopcategory-index">
@@ -33,12 +33,17 @@ export default function ShopCategory(props) {
                 image={item.image}
                 new_price={item.new_price}
                 old_price={item.old_price}
+                className="shopcategory-item"
               />
             );
           }
 
           return null;
         })}
+      </div>
+
+      <div className="loadMore">
+        <button>Load More</button>
       </div>
 
       <Footer />

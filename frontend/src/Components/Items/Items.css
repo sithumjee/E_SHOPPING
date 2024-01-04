@@ -9,12 +9,14 @@
   font-weight: bold;
   color: #000000;
   margin: 6px 0;
+  padding-left: 5px;
 }
 
 .item-price-new {
   color: #3200c8;
   font-size: 18px;
   font-weight: 600;
+  padding-left: 5px;
 }
 
 .item-price-old {
@@ -22,6 +24,7 @@
   font-size: 18px;
   font-weight: 600;
   text-decoration: line-through;
+  padding-left: 5px;
 }
 
 .item:hover {
