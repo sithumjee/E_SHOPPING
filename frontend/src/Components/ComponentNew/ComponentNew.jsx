@@ -18,7 +18,7 @@ const ComponentNew = () => {
               name={item.name} // Item name
               image={item.image} // Item image
               new_price={item.new_price} // New price of the item
-              old_price={item.old_price} // Old price of the item
+              old_price={item.old_price} // Old price of the  item
             />
           );
         })}
