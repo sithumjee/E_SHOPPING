@@ -1,0 +1,9 @@
+.getProductId {
+  font-size: 14px;
+  color: rgb(122, 124, 126);
+}
+
+.getProductId img {
+  width: 8px;
+  margin-right: 5px;
+}
