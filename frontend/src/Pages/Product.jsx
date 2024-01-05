@@ -6,6 +6,7 @@ import { useParams } from "react-router-dom";
 import GetProductId from "../Components/GetProductId/GetProductId";
 import ProductDisplay from "../Components/ProductDisplay/ProductDisplay";
 import DescriptionBox from "../Components/DescriptionBox/DescriptionBox";
+import RelatedProduct from "../Components/RelatedProduct/RelatedProduct";
 
 export default function Product() {
   const { all_product } = useContext(ShopContext);
@@ -20,6 +21,7 @@ export default function Product() {
       <GetProductId product={product} />
       <ProductDisplay product={product} />
       <DescriptionBox />
+      <RelatedProduct product={product} />
       <Footer />
     </div>
   );
