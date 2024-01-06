@@ -8,23 +8,21 @@ const getDefaultCart = () => {
   for (let index = 0; index < all_product.length; index++) {
     cart[index] = 0;
   }
+  return cart; // Return the cart object
 };
-//
+
 const ShopContextProvider = (props) => {
-  //
   const [cartItems, setCartItems] = React.useState(getDefaultCart());
 
-  //
-  //
   const addToCart = (itemId) => {
     setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
+    console.log(cartItems);
   };
 
   const removeToCart = (itemId) => {
     setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
   };
-  //
-  //
+
   const contextValue = { all_product, cartItems, addToCart, removeToCart };
   return (
     <ShopContext.Provider value={contextValue}>
