@@ -24,12 +24,15 @@ const CardItems = () => {
               <div className="carditems-format">
                 <img className="carditemImg" src={item.image} alt="Product" />
                 <p>{item.name}</p>
-                <p>Rs {item.new_price}(</p>
+                <p>Rs {item.new_price}</p>
                 <button className="carditem-quantity">
                   {cartItems[item.id]}
                 </button>
-                <p>{item.new_price * cartItems[item.id]}</p>
+                <p className="totalprice">
+                  Rs {item.new_price * cartItems[item.id]}
+                </p>
                 <img
+                  className="remove-icon"
                   src={remove_icon}
                   alt="Remove"
                   onClick={() => {
