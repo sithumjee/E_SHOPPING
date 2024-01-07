@@ -4,7 +4,8 @@ import { ShopContext } from "../../Context/ShopContent";
 import remove_icon from "../Assets/cart_cross_icon.png";
 
 const CardItems = () => {
-  const { all_product, cartItems, removeToCart } = useContext(ShopContext);
+  const { all_product, cartItems, removeToCart, cartTotal } =
+    useContext(ShopContext);
   return (
     <div className="carditems">
       <div className="cartitems-format-main">
@@ -46,6 +47,41 @@ const CardItems = () => {
         }
         return null; // Ensure a value is always returned from the map function
       })}
+
+      <div className="cardItems-down">
+        <hr />
+        <hr />
+        <div className="cardItems-total">
+          <h1>CART TOTAL</h1>
+          <div>
+            <div className="cardItems-total-item">
+              <p>SubTotal</p>
+              <p>Rs {cartTotal()}</p>
+            </div>
+            <hr />
+
+            <div className="cardItems-total-item">
+              <p>Shipping</p>
+              <p>Free</p>
+            </div>
+            <hr />
+
+            <div className="cardItems-total-item">
+              <h3>Total</h3>
+              <h3>Rs {cartTotal()}</h3>
+            </div>
+          </div>
+
+          <button>Proceed to Checkout</button>
+        </div>
+        <div className="cartItems-promocode">
+          <p>If you have a promo code,Enter it here</p>
+          <div className="cardItems-promobox">
+            <input type="text" placeholder="Enter Code" />
+            <button>Apply</button>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
