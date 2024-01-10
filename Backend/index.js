@@ -89,8 +89,15 @@ const Product = mongoose.model("product", {
 //=================================================================================================
 
 app.post("/addProduct", async (req, res) => {
+  let products = await Product.find({});
+  let id;
+  if (products.length > 0) {
+    id = products[products.length - 1].id + 1;
+  } else {
+    id = 1;
+  }
   const product = new Product({
-    id: req.body.id,
+    id: id,
     name: req.body.name,
     image: req.body.image,
     category: req.body.category,
@@ -112,8 +119,30 @@ app.post("/addProduct", async (req, res) => {
   //     res.json({ message: error });
   // }
 });
+
 //=================================================================================================
 
+//Creating API for deleting a product
+app.post("/deleteProduct", async (req, res) => {
+  await Product.findOneAndDelete({ id: req.body.id });
+  console.log("removed");
+  res.json({
+    success: true,
+    name: req.body.name,
+  });
+});
+
+//=================================================================================================
+
+//Creating API for getting all products
+
+app.get("/allproducts", async (req, res) => {
+  let products = await Product.find({});
+  console.log("all products gets");
+  res.send(products);
+});
+
+//=================================================================================================
 //
 app.listen(port, (error) => {
   if (!error) {
