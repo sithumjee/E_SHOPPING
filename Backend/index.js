@@ -111,13 +111,6 @@ app.post("/addProduct", async (req, res) => {
     success: true,
     name: req.body.name,
   });
-
-  // try {
-  //     const savedProduct = await product.save();
-  //     res.json(savedProduct);
-  // } catch (error) {
-  //     res.json({ message: error });
-  // }
 });
 
 //=================================================================================================
