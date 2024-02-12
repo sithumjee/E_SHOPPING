@@ -1,5 +1,5 @@
 .hero {
-  height: 100vh;
+  height: 120vh;
   background-color: #8ec5fc;
   background-image: linear-gradient(180deg, #8ec5fc 0%, #e0c3fc 100%);
   display: flex;
